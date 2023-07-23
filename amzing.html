@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basics Course</title>
+  <style>
+    /* CSS styles for better presentation */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    #facts, #courses, #enroll {
+      margin-bottom: 2rem;
+    }
+
+    .course {
+      background-color: #f7f7f7;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    .course pre {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Facts Workspace -->
+    <section id="facts">
+      <h2>Amazing Facts</h2>
+      <div class="fact">
+        <h3>Fact 1</h3>
+        <p>Did you know that the first website went live on August 6, 1991?</p>
+      </div>
+      <div class="fact">
+        <h3>Fact 2</h3>
+        <p>The world's first computer programmer was a woman named Ada Lovelace.</p>
+      </div>
+      <div class="fact">
+        <h3>Fact 3</h3>
+        <p>More than half of all internet traffic comes from mobile devices.</p>
+      </div>
+    </section>
+
+    <!-- Courses Workspace -->
+    <section id="courses">
+      <h1>HTML Basics Course</h1>
+
+      <div class="course">
+        <h2>Introduction to HTML</h2>
+        <p>Welcome to the HTML Basics Course! In this module, we'll introduce you to the world of HTML (Hypertext Markup Language), which is the foundation of every website on the internet.</p>
+        <p>HTML uses tags to define the structure and content of a web page. Tags are enclosed in angle brackets, like &lt;tag&gt; and &lt;/tag&gt;.</p>
+        <p>Let's start with a simple HTML document structure:</p>
+
+        <!-- Code Example 1 -->
+        <pre>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;title&gt;My First Web Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Hello, World!&lt;/h1&gt;
+              &lt;p&gt;This is my first web page using HTML.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+        </pre>
+
+        <p>In this example, we have a simple HTML document that includes a heading and a paragraph. The <code>&lt;!DOCTYPE html&gt;</code> declaration defines the document type, and the <code>&lt;html&gt;</code> element is the root element of the HTML document.</p>
+        <p>The <code>&lt;head&gt;</code> element contains meta-information about the document, such as the character encoding and the title that appears in the browser's title bar or tab.</p>
+        <p>The <code>&lt;body&gt;</code> element contains the visible content of the web page. In this example, we have an <code>&lt;h1&gt;</code> heading and a <code>&lt;p&gt;</code> paragraph.</p>
+
+        <p>As you proceed through the course, you'll learn more about HTML tags, how to create links, lists, tables, forms, and multimedia content for your web pages.</p>
+      </div>
+
+      <!-- Enroll Workspace -->
+      <section id="enroll">
+        <h2>Enroll Now</h2>
+        <p>Ready to start your HTML journey? Enroll in the "HTML Basics Course" today!</p>
+        <a href="#courses">Enroll Now</a>
+      </section>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Code Execution Workspace</title>
+  <style>
+    /* Add any custom CSS styles here (optional) */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    #code-editor {
+      width: 100%;
+      height: 400px;
+      font-family: monospace;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+
+    #output {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    #run-button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Code Execution Workspace</h1>
+  <p>Type your HTML code in the textarea below and click "Run" to see the output:</p>
+  <textarea id="code-editor"></textarea>
+  <button id="run-button">Run</button>
+  <div id="output"></div>
+
+  <script>
+    const runButton = document.getElementById('run-button');
+    const codeEditor = document.getElementById('code-editor');
+    const outputDiv = document.getElementById('output');
+
+    runButton.addEventListener('click', () => {
+      outputDiv.innerHTML = codeEditor.value;
+    });
+  </script>
+</body>
+</html>
